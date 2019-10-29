@@ -3,7 +3,7 @@
 # include <cmath>
 using namespace std;
 
-# define TINY_VALUE=1e-10;
+const float TINY_VALUE=1e-10;
 
 double power2(double x, int n){  // 常用功能 
 	double value = 1.0;
@@ -86,7 +86,7 @@ inline double calArea(double radius){
 	return PI*radius*radius;
 } 
 
-int main5(){
+int main2(){
 	double powValue;
 	powValue = power2(5,2);
 	cout<<"5 to the power 2 is:"<<powValue<<endl;

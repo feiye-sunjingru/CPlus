@@ -4,42 +4,57 @@
 <TargetName>TestExamples</TargetName>
 <TargetType>exe</TargetType>
 <Folder name="Source Files">
-	<File>main.cpp</File>
 	<File>2_1.cpp</File>
 	<File>3_3.cpp</File>
-	<File>..\Test\3_4.cpp</File>
-	<File>..\Test\3_5.cpp</File>
-	<File>..\Test\4_2.cpp</File>
-	<File>..\Test\4_4.cpp</File>
-	<File>..\Test\4_8.cpp</File>
-	<File>..\Test\4_9.cpp</File>
-	<File>..\Test\4_10.cpp</File>
-	<File>..\Test\4_11.cpp</File>
-	<File>..\Test\CFree.cpp</File>
-	<File>..\Test\CPU.cpp</File>
-	<File>..\Test\hello_world.cpp</File>
-	<File>..\Test\TestThread.cpp</File>
-	<File>..\Test\ThreadEx.cpp</File>
+	<File>6_10.cpp</File>
+	<File>3_4.cpp</File>
+	<File>3_5.cpp</File>
+	<File>4_2.cpp</File>
+	<File>4_4.cpp</File>
+	<File>4_8.cpp</File>
+	<File>4_9.cpp</File>
+	<File>4_10.cpp</File>
+	<File>4_11.cpp</File>
+	<File>CFree.cpp</File>
+	<File>CPU.cpp</File>
+	<File>hello_world.cpp</File>
+	<File>TestThread.cpp</File>
+	<File>ThreadEx.cpp</File>
+	<File>6_11.cpp</File>
+	<File>6_12.cpp</File>
+	<File>6_18.cpp</File>
+	<File>6_19.cpp</File>
 </Folder>
 <Folder name="Header Files">
-	<File>..\Test\ThreadEx.h</File>
+	<File>ThreadEx.h</File>
+	<File>point.h</File>
 </Folder>
 <Folder name="Other Files">
 </Folder>
 	<File>Readme.md</File>
-<Attribute topline="1" x="11" y="13">2_1.cpp</Attribute>
-<Attribute topline="64" x="8" y="93">3_3.cpp</Attribute>
-<Attribute topline="1" x="7" y="1">..\Test\3_4.cpp</Attribute>
-<Attribute topline="1" x="4" y="1">..\Test\3_5.cpp</Attribute>
-<Attribute topline="20" x="1" y="1">..\Test\4_2.cpp</Attribute>
-<Attribute topline="18" x="1" y="53">..\Test\4_8.cpp</Attribute>
-<Attribute topline="13" x="1" y="1">..\Test\4_9.cpp</Attribute>
-<Attribute topline="73" x="1" y="1">..\Test\4_10.cpp</Attribute>
-<Attribute topline="55" x="1" y="1">..\Test\4_11.cpp</Attribute>
-<Attribute topline="64" x="1" y="1">..\Test\CPU.cpp</Attribute>
-<Attribute topline="1" x="21" y="6">..\Test\hello_world.cpp</Attribute>
-<Attribute topline="1" x="46" y="10">Readme.md</Attribute>
+<Attribute topline="1" x="20" y="12">2_1.cpp</Attribute>
+<Attribute topline="1" x="13" y="6">3_3.cpp</Attribute>
+<Attribute topline="4" x="2" y="9">6_10.cpp</Attribute>
+<Attribute topline="4" x="10" y="7">3_4.cpp</Attribute>
+<Attribute topline="10" x="10" y="14">3_5.cpp</Attribute>
+<Attribute topline="32" x="1" y="9">4_2.cpp</Attribute>
+<Attribute topline="52" x="10" y="59">4_4.cpp</Attribute>
+<Attribute topline="37" x="10" y="44">4_8.cpp</Attribute>
+<Attribute topline="1" x="10" y="9">4_9.cpp</Attribute>
+<Attribute topline="197" x="10" y="199">4_10.cpp</Attribute>
+<Attribute topline="61" x="11" y="66">4_11.cpp</Attribute>
+<Attribute topline="1" x="11" y="5">CFree.cpp</Attribute>
+<Attribute topline="49" x="1" y="57">CPU.cpp</Attribute>
+<Attribute topline="4" x="11" y="9">hello_world.cpp</Attribute>
+<Attribute topline="10" x="11" y="11">TestThread.cpp</Attribute>
+<Attribute topline="49" x="1" y="1">ThreadEx.cpp</Attribute>
+<Attribute topline="1" x="27" y="4">Readme.md</Attribute>
 <FolderState>111</FolderState>
+<Breakpoint>
+	<File>6_19.cpp</File>
+	<Line>69</Line>
+	<Condition></Condition>
+</Breakpoint>
 <DefConfig>TDM-GCC-64</DefConfig>
 <Builder name="TDM-GCC-64" type="MinGW" version="1.0">
 	<TargetName>TestExamples</TargetName>

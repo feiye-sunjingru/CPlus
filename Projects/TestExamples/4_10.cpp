@@ -196,7 +196,7 @@ class Computer{
 		unsigned int bandwidth; // MB ´ø¿í 
 };
 
-int main13(){
+int main9(){
 	CPU a(P6, 300, 2.8);
 	a.run();
 	a.stop();

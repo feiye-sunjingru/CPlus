@@ -56,7 +56,7 @@ class Line{
 		Point p1, p2;
 }; 
 
-int main8(){
+int main6(){
 	Point myp1(1,1), myp2(4,5);
 	// 先把myp2复制给形参，再是myp1 
 	Line line(myp1, myp2);

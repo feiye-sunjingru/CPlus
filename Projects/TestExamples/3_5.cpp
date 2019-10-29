@@ -11,7 +11,7 @@ class Clock{
 		int hour, minute, second;
 };
 
-int main6(){
+int main4(){
 	double powValue;
 	powValue = pow(5.0,2);
 	cout<<"5 to the power 2 is:"<<powValue<<endl;

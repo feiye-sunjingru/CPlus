@@ -2,7 +2,7 @@
 # include <iostream>
 using namespace std;
 
-int main1()
+int main11()
 {
 	cout<<"Hello C-Free!"<<endl;
 	return 0;

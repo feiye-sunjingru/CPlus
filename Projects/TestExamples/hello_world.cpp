@@ -6,7 +6,7 @@ void PrintWord(){
 	cout<<"Word"<<endl;
 }
 
-int main1(int argc, char * argv[]){
+int main12(int argc, char * argv[]){
 	int *nums = (int *)malloc(sizeof(int)*3);
 	nums[0] = 0;
 	nums[1] = 1;

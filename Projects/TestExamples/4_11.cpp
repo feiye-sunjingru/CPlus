@@ -63,7 +63,7 @@ class People{
 		string id;
 };
 
-int main14(){
+int main10(){
 	Date birth("2012","3","6");
 	People people(1, Man, birth, "0000001");
 	people.show();

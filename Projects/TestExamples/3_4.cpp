@@ -1,12 +1,12 @@
-// ConsoleApplication3_3.cpp 
+// 3_4.cpp 
 # include <iostream>
 using namespace std;
 
 enum GameResult{WIN,LOSE,TIE,CANCEL};
 
-int main4(){
-	GameResult result;  // √∂æŸ÷µ∂®“Â 
-	enum GameResult omit = CANCEL;  // √∂æŸ÷µ∂®“Â£¨≥ı º÷µŒ™CANCEL 
+int main3(){
+	GameResult result;  // ???????? 
+	enum GameResult omit = CANCEL;  // ???????Â£¨?????CANCEL 
 	for(int count=WIN; count<=CANCEL; count++){
 		result = GameResult(count);
 		if(result == omit){

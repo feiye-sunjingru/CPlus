@@ -1,47 +1,10 @@
 // 4_2.cpp 
 # include <iostream>
 # include <cmath> 
+#include "point.h"
 using namespace std;
 
-class Point{
-	public:
-		Point(int xx=0, int yy=0){
-			x = xx;
-			y = yy;
-			count++; 
-		}
-		Point(const Point &p){ // 先完成参数传递
-			x = p.x;
-			y = p.y;
-			count++;
-			cout<<"Calling the copy constructor"<<endl;		
-		} // =delete指示编译器不生成默认复制构造函数 
-
-		~Point(){
-			count--;
-		}
-		
-		int getX(){
-			return x;
-		}
-		
-		int getY(){
-			return y;
-		}
-		
-		void showCount() const{
-			cout<<"Object count="<<count<<endl;
-		}
-		
-		friend float dist(const Point& a, const Point& b);
-	
-	private:
-		int x, y;
-		static int count; // 静态数据成员声明，用于记录点的个数 
-}; 	
-
-int Point::count = 0; // 静态数据成员必须在类外初始化	
-
+int Point::count = 0; // 静态数据成员必须在类外初始化
 float dist(const Point& a, const Point& b){  // 外部访问私有成员（出于效率，没有用get）需要friend权限
 	double x = a.x - b.x;
 	double y = a.y - b.y;
@@ -58,8 +21,10 @@ Point fun2(){
 	return a;  // 返回到值，要完成复制构造 
 } 
 
-int main(){
-	Point a;  // 第一个对象a 
+int main5(){
+	Point a(4,5);  // 第一个对象a 
+	Point *p1 = &a;  
+	cout<<"****************************"<<endl;	
 	Point b(a);  // Q1:用a初始化b，第1次调用拷贝构造函数 
 	cout<<b.getX()<<endl;
 	fun1(b); // Q2:对象b作为func1的实参，第2次调用拷贝复制函数 

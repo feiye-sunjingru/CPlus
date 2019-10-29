@@ -18,16 +18,16 @@ class ExamInfo{
 		void show();
 	
 	private:
-		string name; // ¿Î³ÌÃû³Æ
+		string name; // ?Î³?????
 		enum{
 			GRADE, PASS, PERCENTAGE
-		} mode; // ¼Æ·Ö·½Ê½
+		} mode; // ?????
 		
-		// Ê¹ÓÃÁªºÏÌå±£´æ³É¼¨ÐÅÏ¢£¬²¢ÇÒÊä³ö 
+		// ????????å±£???????????????? 
 		union{
-			char grade; // µÈ¼¶ÖÆµÄ³É¼¨
-			bool pass; // Ö»¼ÇÊÇ·ñÍ¨¹ý¿Î³Ì
-			int percent; // °Ù·ÖÖÆµÄ³É¼¨ 
+			char grade; // ????????
+			bool pass; // ??????????Î³?
+			int percent; // ???????? 
 		};
 };
 
@@ -41,7 +41,7 @@ void ExamInfo::show(){
 	cout<<endl;
 } 
 
-int main9(){
+int main7(){
 	ExamInfo course1("English", 'B');
 	ExamInfo course2("Calculus", true);
 	ExamInfo course3("C++ Programming", 85);
