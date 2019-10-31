@@ -1,17 +1,7 @@
 <Projects version="2.0">
 	<Project active="1">TestExamples.cfp</Project>
-	<File active="0">2_1.cpp</File>
-	<File active="0">3_3.cpp</File>
 	<File active="0">Readme.md</File>
-	<File active="0">..\Test\3_4.cpp</File>
-	<File active="0">..\Test\3_5.cpp</File>
-	<File active="0">..\Test\4_2.cpp</File>
-	<File active="0">..\Test\4_4.cpp</File>
-	<File active="0">..\Test\4_8.cpp</File>
-	<File active="0">..\Test\4_9.cpp</File>
-	<File active="0">..\Test\4_10.cpp</File>
-	<File active="0">..\Test\4_11.cpp</File>
-	<File active="0">..\Test\CFree.cpp</File>
-	<File active="0">..\Test\CPU.cpp</File>
-	<File active="1">..\Test\hello_world.cpp</File>
+	<File active="0">6_21.cpp</File>
+	<File active="1">6_24.cpp</File>
+	<File active="0">point.h</File>
 </Projects>
