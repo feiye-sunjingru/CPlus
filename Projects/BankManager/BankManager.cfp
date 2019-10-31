@@ -16,19 +16,16 @@
 <Folder name="Other Files">
 </Folder>
 	<File>Readme.md</File>
-<Attribute topline="13" x="2" y="23">account.cpp</Attribute>
-<Attribute topline="1" x="4" y="19">5_11.cpp</Attribute>
+	<File>银行账户管理系统说明.md</File>
+<Attribute topline="1" x="1" y="6">account.cpp</Attribute>
+<Attribute topline="4" x="11" y="11">5_11.cpp</Attribute>
 <Attribute topline="9" x="1" y="24">date.cpp</Attribute>
-<Attribute topline="21" x="17" y="26">main.cpp</Attribute>
-<Attribute topline="28" x="4" y="36">account.h</Attribute>
+<Attribute topline="7" x="13" y="24">main.cpp</Attribute>
+<Attribute topline="1" x="1" y="6">account.h</Attribute>
 <Attribute topline="16" x="1" y="30">date.h</Attribute>
 <Attribute topline="1" x="27" y="3">Readme.md</Attribute>
+<Attribute topline="1" x="36" y="8">银行账户管理系统说明.md</Attribute>
 <FolderState>111</FolderState>
-<Breakpoint>
-	<File>main.cpp</File>
-	<Line>26</Line>
-	<Condition></Condition>
-</Breakpoint>
 <Watch name="totalDays"/>
 <Watch name="years"/>
 <Watch name="n"/>

@@ -2,6 +2,9 @@
 	<Project active="1">TestExamples.cfp</Project>
 	<File active="0">Readme.md</File>
 	<File active="0">6_21.cpp</File>
-	<File active="1">6_24.cpp</File>
+	<File active="0">6_24.cpp</File>
+	<File active="0">6_23.cpp</File>
+	<File active="1">6_25.cpp</File>
+	<File active="0">C:\TDM-GC~1\lib\gcc\x86_64-w64-mingw32\5.1.0\include\c++\bits\move.h</File>
 	<File active="0">point.h</File>
 </Projects>
