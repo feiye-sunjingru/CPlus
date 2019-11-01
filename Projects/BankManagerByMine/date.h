@@ -20,7 +20,11 @@ class Date{
 			cout<<getYear()<<"/"<<getMonth()<<"/"<<getDay()<<endl;
 		}
 		
-		int distance(const Date& date)const{ // 更大的日期 
+		/*int distance(const Date& date)const{ // 更大的日期 
+			return date.totalDays-totalDays;
+		}*/
+		
+		int operator -(const Date& date)const{
 			return date.totalDays-totalDays;
 		}
 	private:

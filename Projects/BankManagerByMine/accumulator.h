@@ -5,7 +5,8 @@
 class Accumulator{  // 每次对账户的操作都要做一次累加 
 	public:
 		double getSum(const Date& date) const{
-			return sum+lastDate.distance(date)*value;
+			// return sum+lastDate.distance(date)*value;
+			return sum+(lastDate-date)*value;
 		}
 		
 		// 日期，每天的增量 

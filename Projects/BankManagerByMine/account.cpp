@@ -16,7 +16,9 @@ void SavingsAccount::withdraw(const Date& date, double amount, const string& des
 }
 
 void SavingsAccount::settle(const Date& tmpdate){  // 按年算利息,假设一年不变 
-	double interest = acc.getSum(tmpdate)*rate / tmpdate.distance(Date(tmpdate.getYear()-1,1,1));
+	//double interest = acc.getSum(tmpdate)*rate / tmpdate.distance(Date(tmpdate.getYear()-1,1,1));
+	double interest = acc.getSum(tmpdate)*rate / (tmpdate-Date(tmpdate.getYear()-1,1,1));
+
 	if(interest != 0){
 		record(tmpdate, interest, "interest"); 
 	}
