@@ -1,38 +1,48 @@
 <Project version="3.0">
-<Name>BankManager</Name>
+<Name>BankManager2</Name>
 <Type>CUI</Type>
-<TargetName>BankManager</TargetName>
+<TargetName>BankManager2</TargetName>
 <TargetType>exe</TargetType>
 <Folder name="Source Files">
-	<File>account.cpp</File>
-	<File>5_11.cpp</File>
-	<File>date.cpp</File>
 	<File>main.cpp</File>
+	<File>..\..\..\CPlus\Projects\BankManager\date.cpp</File>
+	<File>account.cpp</File>
 </Folder>
 <Folder name="Header Files">
+	<File>..\..\..\CPlus\Projects\BankManager\date.h</File>
 	<File>account.h</File>
-	<File>date.h</File>
+	<File>accumulator.h</File>
 </Folder>
 <Folder name="Other Files">
 </Folder>
 	<File>Readme.md</File>
-	<File>银行账户管理系统说明.md</File>
-<Attribute topline="1" x="8" y="26">account.cpp</Attribute>
-<Attribute topline="4" x="11" y="11">5_11.cpp</Attribute>
-<Attribute topline="9" x="1" y="24">date.cpp</Attribute>
-<Attribute topline="1" x="1" y="10">main.cpp</Attribute>
-<Attribute topline="22" x="3" y="25">account.h</Attribute>
-<Attribute topline="16" x="1" y="30">date.h</Attribute>
+<Attribute topline="31" x="21" y="35">main.cpp</Attribute>
+<Attribute topline="6" x="1" y="12">..\..\..\CPlus\Projects\BankManager\date.cpp</Attribute>
+<Attribute topline="53" x="1" y="63">account.cpp</Attribute>
+<Attribute topline="1" x="1" y="15">..\..\..\CPlus\Projects\BankManager\date.h</Attribute>
+<Attribute topline="46" x="1" y="52">account.h</Attribute>
+<Attribute topline="10" x="4" y="21">accumulator.h</Attribute>
 <Attribute topline="1" x="27" y="3">Readme.md</Attribute>
-<Attribute topline="1" x="36" y="8">银行账户管理系统说明.md</Attribute>
 <FolderState>111</FolderState>
-<Watch name="totalDays"/>
-<Watch name="years"/>
-<Watch name="n"/>
-<Watch name="accumulation"/>
+<Breakpoint>
+	<File>main.cpp</File>
+	<Line>28</Line>
+	<Condition></Condition>
+</Breakpoint>
+<Watch name="id"/>
+<Watch name="balance"/>
+<Watch name="total"/>
+<Watch name="rate"/>
+<Watch name="lastDate"/>
+<Watch name="value"/>
+<Watch name="sum"/>
+<Watch name="credit"/>
+<Watch name="fee"/>
+<Watch name="interest"/>
+<Watch name="acc.getSum(date)"/>
 <DefConfig>TDM-GCC-64</DefConfig>
 <Builder name="TDM-GCC-64" type="MinGW" version="1.0">
-	<TargetName>BankManager</TargetName>
+	<TargetName>BankManager2</TargetName>
 	<TargetType>exe</TargetType>
 	<TargetDir>TDM-GCC-64</TargetDir>
 	<InterimDir>TDM-GCC-64</InterimDir>

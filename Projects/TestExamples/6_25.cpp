@@ -20,7 +20,7 @@ void transpose(int **arr){ // 动态数组实现，静态数组是直接对应{}
 	}
 }
 
-int main(){
+int main24(){
 	int **a;
 	a = new int* [3];
 	for(int i=0; i<3; i++){

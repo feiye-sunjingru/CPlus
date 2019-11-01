@@ -30,6 +30,10 @@
 	<File>6_23.cpp</File>
 	<File>6_24.cpp</File>
 	<File>6_25.cpp</File>
+	<File>8_1.cpp</File>
+	<File>8_2.cpp</File>
+	<File>8_3.cpp</File>
+	<File>7_3.cpp</File>
 </Folder>
 <Folder name="Header Files">
 	<File>ThreadEx.h</File>
@@ -62,9 +66,13 @@
 <Attribute topline="1" x="11" y="7">6_22.cpp</Attribute>
 <Attribute topline="1" x="11" y="38">6_23.cpp</Attribute>
 <Attribute topline="1" x="11" y="7">6_24.cpp</Attribute>
-<Attribute topline="32" x="15" y="38">6_25.cpp</Attribute>
+<Attribute topline="34" x="1" y="1">6_25.cpp</Attribute>
+<Attribute topline="16" x="11" y="32">8_1.cpp</Attribute>
+<Attribute topline="25" x="17" y="36">8_2.cpp</Attribute>
+<Attribute topline="25" x="11" y="31">8_3.cpp</Attribute>
+<Attribute topline="49" x="53" y="55">7_3.cpp</Attribute>
 <Attribute topline="49" x="18" y="57">point.h</Attribute>
-<Attribute topline="4" x="71" y="17">Readme.md</Attribute>
+<Attribute topline="1" x="21" y="18">Readme.md</Attribute>
 <FolderState>111</FolderState>
 <Breakpoint>
 	<File>test.cpp</File>
