@@ -3,7 +3,7 @@
 #include <iostream>
 #include "date.h"
 #include "account.h"
-using namespace std;
+
 
 // Account类的实现 
 double Account::total = 0;
@@ -20,17 +20,17 @@ void Account::show(){
 }
 
 // SavingsAccount储蓄卡成员函数
-SavingsAccount::SavingsAccount(const Date& date, const string& id, double balance, double rate)
+SavingsAccount::SavingsAccount(Date& date, const string& id, double balance, double rate)
 	:Account(id, balance), rate(rate),lastDate(date){
 	cout<<date.getYear()<<"/"<<date.getMonth()<<"/"<<date.getDay()<<endl;
 	cout<<"\t账号"<<id<<"创建成功!"<<endl;
 }
 
-const double SavingsAccount::accumulate(const Date& date){
+const double SavingsAccount::accumulate(Date& date){
 	return (date-lastDate)*balance;  // 上次到这次balance*时间 
 }
 
-void SavingsAccount::deposit(const Date& date, double amount, const string& desc){
+void SavingsAccount::deposit(Date& date, double amount, const string& desc){
 	accumulation+=accumulate(date);
 	balance+=amount;
 	lastDate = date;
@@ -39,7 +39,7 @@ void SavingsAccount::deposit(const Date& date, double amount, const string& desc
 	cout<<"\t"<<id<<"\t存入:"<<amount<<"\t余额:"<<balance<<"\t"<<desc<<endl;
 }
 
-void SavingsAccount::withdraw(const Date& date, double amount, const string& desc){
+void SavingsAccount::withdraw(Date& date, double amount, const string& desc){
 	accumulation+=accumulate(date);
 	balance-=amount;
 	lastDate = date;
@@ -48,7 +48,7 @@ void SavingsAccount::withdraw(const Date& date, double amount, const string& des
     cout<<"\t"<<id<<"\t取出:"<<amount<<"\t余额:"<<balance<<"\t"<<desc<<endl;
 } 
 
-void SavingsAccount::settle(const Date& tmpdate){  // 按年算利息,假设一年不变 
+void SavingsAccount::settle(Date& tmpdate){  // 按年算利息,假设一年不变 
 	double settle = 0;
 	double tmpAccumulation = accumulation;
 	if(tmpdate.getYear()>lastDate.getYear()){ // 滚存 
@@ -63,7 +63,7 @@ void SavingsAccount::settle(const Date& tmpdate){  // 按年算利息,假设一年不变
 	} 
 	cout<<tmpdate.getYear()<<"/"<<tmpdate.getMonth()<<"/"<<tmpdate.getDay()<<endl;
     cout<<"\t"<<id<<"\t结算利息:"<<(accumulation-tmpAccumulation)<<endl;
-    deposit(tmpdate,settle);
+    deposit(tmpdate,settle,"");
 } 
 
 void SavingsAccount::show(){
@@ -71,13 +71,13 @@ void SavingsAccount::show(){
 }
 
 // CreditAccount信用卡类
-CreditAccount::CreditAccount(const Date& date, const string& id, double balance, double fee, double rate, double credit)
-	:Account(id, balance), fee(fee), rate(rate), credit(credit){
+CreditAccount::CreditAccount(Date& date, const string& id, double balance, double fee, double rate, double credit)
+	:Account(id, balance), fee(fee), rate(rate), credit(credit), lastDate(date){
 	cout<<date.getYear()<<"/"<<date.getMonth()<<"/"<<date.getDay()<<endl;
     cout<<"\t账号"<<id<<"创建成功!"<<endl;	
 }
 
-void CreditAccount::deposit(const Date& date, double amount, const string& desc){
+void CreditAccount::deposit(Date& date, double amount, const string& desc){
 	settle(date);
     balance += amount;
     if((credit+amount) <= 10000){
@@ -91,7 +91,7 @@ void CreditAccount::deposit(const Date& date, double amount, const string& desc)
 		"\t还可用额度:"<<credit<<"\t"<<desc<<endl;
 }
 
-void CreditAccount::withdraw(const Date& date, double amount, const string& desc){
+void CreditAccount::withdraw(Date& date, double amount, const string& desc){
 	settle(date);
     if(credit<=0 || amount>credit){
         date.show();
@@ -106,17 +106,22 @@ void CreditAccount::withdraw(const Date& date, double amount, const string& desc
     }
 }
 
-void CreditAccount::settle(Date date){
+void CreditAccount::settle(Date& date){
 	double settle=0;
 	if(date.getTotalDays()>lastDate.getTotalDays()) {
 		int disYear = lastDate.getDisYears(date);
 		int disMonth = lastDate.getDisMonths(date);
 		settle += disYear * fee;
-		settle -= disMonth * balance * (dis)
+		settle -= disMonth * balance * rate;
 	}
 	balance -= settle;
     lastDate = date;
     total -= settle;
+}
+
+double CreditAccount::getDebt(Date& date) {
+	settle(date);
+	return balance;
 }
 
 void CreditAccount::show(){

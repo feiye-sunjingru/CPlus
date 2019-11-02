@@ -8,3 +8,5 @@
 答： 
 	#include <iostream>
 	using namespace std;
+3. c++中"cout"不明确问题
+答：将using namespace std; 删除后保存cpp文件，再加上using namespace std;保存cpp文件。

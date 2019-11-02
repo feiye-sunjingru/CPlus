@@ -11,9 +11,9 @@ public:
 	const string& getId() {return id;}
 	const double getBalance() {return balance;}
 	static double getTotal();
-	virtual void deposit(const Date& date, double amount, const string& desc)=0;
-	virtual void withdraw(const Date& date, double amount, const string& desc)=0;
-	virtual void settle(const Date& date)=0; // 结算
+	virtual void deposit(Date& date, double amount, const string& desc)=0;
+	virtual void withdraw(Date& date, double amount, const string& desc)=0;
+	virtual void settle(Date& date)=0; // 结算
 	virtual void show(); // 虚函数动态绑定 
 protected:
 	string id;
@@ -23,15 +23,15 @@ protected:
 
 class SavingsAccount:public Account{  // 储蓄账户
 public:
-	SavingsAccount(const Date& date, const string& id, double balance, double rate);
-	const Date& getLastDate(){return lastDate;}
+	SavingsAccount(Date& date, const string& id, double balance, double rate);
+	Date& getLastDate(){return lastDate;}
 	const double getRate() {return rate;}
-	virtual void deposit(const Date& date, double amount, const string& desc);
-	virtual void withdraw(const Date& date, double amount, const string& desc);
-	virtual void settle(const Date& date);
+	virtual void deposit(Date& date, double amount, const string& desc);
+	virtual void withdraw(Date& date, double amount, const string& desc);
+	virtual void settle(Date& date);
 	virtual void show();
 	double accumulation=0;
-    const double accumulate(const Date& date); // 做累加 
+    const double accumulate(Date& date); // 做累加 
 protected:
 	Date lastDate;
 	double rate;    //利率	
@@ -39,16 +39,16 @@ protected:
 
 class CreditAccount:public Account{  // 信用卡账户
 public:
-	CreditAccount(const Date& date, const string& id, double balance, double fee, double rate, double credit);
-	const Date& getLastDate(){return lastDate;}
+	CreditAccount(Date& date, const string& id, double balance, double fee, double rate, double credit);
+	Date& getLastDate(){return lastDate;}
 	const double getFee() {return fee;}
 	const double getRate() {return rate;}
 	const double getCredit() {return credit;}
-	virtual void deposit(const Date& date, double amount, const string& desc);
-	virtual void withdraw(const Date& date, double amount, const string& desc);
-	virtual void settle(const Date& date);
+	virtual void deposit(Date& date, double amount, const string& desc);
+	virtual void withdraw(Date& date, double amount, const string& desc);
+	virtual void settle(Date& date);
 	virtual void show();
-	double getDebt(Date date) const; // 欠款多少 
+	double getDebt(Date& date); // 欠款多少 
 protected:
 	Date lastDate;
 	double fee; // 年费

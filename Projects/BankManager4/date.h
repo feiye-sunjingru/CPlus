@@ -19,7 +19,7 @@ public:
 		return false;
 	}
 	
-	int getDisYears(const Date& date){ 
+	int getDisYears(Date& date){ 
 		int disYears = date.year - year;
 		if(date.getTotalDays()>=totalDays){	
 			if(date.getMonth()<month){
@@ -39,7 +39,7 @@ public:
 		return disYears;
 	}
 	
-	int getDisMonths(const Date& date){
+	int getDisMonths(Date& date){
 		int disYears = getDisYears(date);
 		int disMonths = (date.month - month + 12)%12;
 		if(date.getTotalDays()>=totalDays){
@@ -56,7 +56,7 @@ public:
 		}
 	}
 	
-	int operator -(const Date& date)const{  // 运算符重载operator 
+	int operator -(Date& date)const{  // 运算符重载operator 
 		return totalDays-date.totalDays;
 	}
 	
