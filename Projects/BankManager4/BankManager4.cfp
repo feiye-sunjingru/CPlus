@@ -12,23 +12,20 @@
 <Folder name="Header Files">
 	<File>date.h</File>
 	<File>account.h</File>
+	<File>array.h</File>
 </Folder>
 <Folder name="Other Files">
 </Folder>
 	<File>ReadMe.md</File>
-<Attribute topline="4" x="20" y="9">main.cpp</Attribute>
-<Attribute topline="25" x="18" y="34">date.cpp</Attribute>
+<Attribute topline="40" x="40" y="76">main.cpp</Attribute>
+<Attribute topline="22" x="23" y="28">date.cpp</Attribute>
 <Attribute topline="53" x="41" y="61">account.cpp</Attribute>
-<Attribute topline="1" x="1" y="4">test.cpp</Attribute>
-<Attribute topline="20" x="5" y="27">date.h</Attribute>
-<Attribute topline="22" x="75" y="30">account.h</Attribute>
-<Attribute topline="1" x="2" y="10">ReadMe.md</Attribute>
+<Attribute topline="9" x="15" y="19">test.cpp</Attribute>
+<Attribute topline="70" x="14" y="9">date.h</Attribute>
+<Attribute topline="1" x="18" y="5">account.h</Attribute>
+<Attribute topline="1" x="60" y="15">array.h</Attribute>
+<Attribute topline="1" x="66" y="2">ReadMe.md</Attribute>
 <FolderState>111</FolderState>
-<Breakpoint>
-	<File>main.cpp</File>
-	<Line>7</Line>
-	<Condition></Condition>
-</Breakpoint>
 <Watch name="totalDays"/>
 <Watch name="month"/>
 <DefConfig>TDM-GCC-64</DefConfig>

@@ -14,7 +14,7 @@ void outputArray(const T* array, int count) {
 	cout << endl;
 }
 
-int main6() {
+int main31() {
 	int n = -5;
 	double d = -5.5;
 	cout << abs(n) << endl;

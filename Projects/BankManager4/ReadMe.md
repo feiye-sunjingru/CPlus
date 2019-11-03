@@ -1,5 +1,5 @@
 ## 注意
-
+* 郑莉 李超的源代码，参考：https://www.jianshu.com/p/e84382570d3d 
 
 ## 常见错误
 1. C++ error: 'string' does not name a type

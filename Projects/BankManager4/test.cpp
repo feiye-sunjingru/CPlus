@@ -5,7 +5,7 @@
 #include "account.h"
 using namespace std;
 
-int main(){
+int main1(){
     Date d01(2008,11,5),d02(2008,12,5),d11(2008,11,25);
 	Date d12(2008,12,20),d2(2009,1,1),dc1(2008,11,15),dc2(2008,12,1);
     Account *ptr;           //定义基类指针
