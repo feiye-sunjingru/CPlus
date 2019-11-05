@@ -3,7 +3,7 @@
 #include "Node.h"
 using namespace std;
 
-int main(){
+int main36(){
 	int a[10];
 	Node<int> n[10];
 	cout<<"输入10个整数："<<endl;
@@ -16,7 +16,7 @@ int main(){
 	}
 	n[9].data= a[9];
 	Node<int>*np = &n[0];
-	while(np!=null){
+	while(np!=NULL){
 		cout<<np->data<<" ";
 		np = np->nextNode();
 	}
@@ -26,7 +26,7 @@ int main(){
 	cin>>f;
 	Node<int>p(0,&n[0]);
 	np = &p;
-	while(np->nextNode()!=null){
+	while(np->nextNode()!=NULL){
 		while(np->nextNode()->data==f){
 			np->deleteAfter();
 		}

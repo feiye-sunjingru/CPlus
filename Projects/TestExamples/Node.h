@@ -4,18 +4,18 @@
 
 template<class T>
 class LinkedList;
-// ÀàÄ£°åµÄ¶¨Òå
+// ç±»æ¨¡æ¿çš„å®šä¹‰
 template<class T>
-class Node{ // µ¥Á´±í½áµãµÄ ÀàÄ£°å 
+class Node{ // å•é“¾è¡¨ç»“ç‚¹çš„ ç±»æ¨¡æ¿ 
 private:
-	Node<T> *next; // Ö¸Ïòºó¼Ì½áµãµÄÖ¸Õë 
+	Node<T> *next; // æŒ‡å‘åç»§ç»“ç‚¹çš„æŒ‡é’ˆ 
 public:
-	T data; // Êı¾İÓò 
-	Node(const T&item, Node<T>*next=0);  // ¹¹Ôìº¯Êı 
-	void insertAfter(Node<T>*p); // ÔÚ±¾½ÚµãÖ®ºó²åÈëÒ»¸öÍ¬Àà½áµãp 
-	Node<T>*deleteAfter(); // É¾³ı±¾½áµãµÄºó¼Ì½áµã£¬²¢·µ»ØÆäµØÖ· 
-	Node<T>*nextNode(); // »ñÈ¡ºó¼Ì½áµãµÄµØÖ· 
-	const Node<T>*nextNode()const; // »ñÈ¡ºó¼Ì½áµãµÄµØÖ· 
+	T data; // æ•°æ®åŸŸ 
+	Node(const T&item=0, Node<T>*next=0);  // æ„é€ å‡½æ•° 
+	void insertAfter(Node<T>*p); // åœ¨æœ¬èŠ‚ç‚¹ä¹‹åæ’å…¥ä¸€ä¸ªåŒç±»ç»“ç‚¹p 
+	Node<T>*deleteAfter(); // åˆ é™¤æœ¬ç»“ç‚¹çš„åç»§ç»“ç‚¹ï¼Œå¹¶è¿”å›å…¶åœ°å€ 
+	Node<T>*nextNode(); // è·å–åç»§ç»“ç‚¹çš„åœ°å€ 
+	const Node<T>*nextNode()const; // è·å–åç»§ç»“ç‚¹çš„åœ°å€ 
 	friend LinkedList<T>;
 };
 
@@ -24,17 +24,17 @@ Node<T>::Node(const T&item, Node<T>*next):data(item), next(next){}
 
 template<class T>
 void Node<T>::insertAfter(Node<T>*p){
-	p->next = next;  // p½áµãÖ¸ÕëÓòÖ¸Ïòµ±Ç°½áµãµÄºó¼Ì½áµã 
-	next = p; // this.next µ±Ç°½áµãµÄÖ¸ÕëÓòÖ¸Ïòp 
+	p->next = next;  // pç»“ç‚¹æŒ‡é’ˆåŸŸæŒ‡å‘å½“å‰ç»“ç‚¹çš„åç»§ç»“ç‚¹ 
+	next = p; // this.next å½“å‰ç»“ç‚¹çš„æŒ‡é’ˆåŸŸæŒ‡å‘p 
 }
 
 template<class T>
 Node<T>* Node<T>::deleteAfter(){
-	Node<T>*tempptr = next; // ÊÇ·ñÒªÁôÒªÉ¾³ıµÄÕâ¸ö½áµã
-	if(next == 0){  // ¸ÃÖ¸ÕëÊÇ·ñÎª¿Õ 
+	Node<T>*tempptr = next; // æ˜¯å¦è¦ç•™è¦åˆ é™¤çš„è¿™ä¸ªç»“ç‚¹
+	if(next == 0){  // è¯¥æŒ‡é’ˆæ˜¯å¦ä¸ºç©º 
 		return 0;
 	}
-	next = tempptr->next; // ÖĞ¼ä½áµã¾Í¿Õ×ÅÁË
+	next = tempptr->next; // ä¸­é—´ç»“ç‚¹å°±ç©ºç€äº†
 	return tempptr; 
 }
 

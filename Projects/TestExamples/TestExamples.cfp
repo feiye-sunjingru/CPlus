@@ -44,6 +44,28 @@
 	<File>lab9_9.cpp</File>
 	<File>Calculator.cpp</File>
 	<File>lab9_10.cpp</File>
+	<File>lab9_11.cpp</File>
+	<File>lab9_12.cpp</File>
+	<File>lab9_13.cpp</File>
+	<File>lab10_1.cpp</File>
+	<File>10_2.cpp</File>
+	<File>10_3.cpp</File>
+	<File>10_4.cpp</File>
+	<File>10_5.cpp</File>
+	<File>10_6.cpp</File>
+	<File>10_7.cpp</File>
+	<File>10_8.cpp</File>
+	<File>10_9.cpp</File>
+	<File>10_10.cpp</File>
+	<File>10_11.cpp</File>
+	<File>10_12.cpp</File>
+	<File>10_13.cpp</File>
+	<File>10_14.cpp</File>
+	<File>10_15.cpp</File>
+	<File>10_16.cpp</File>
+	<File>10_17.cpp</File>
+	<File>10_18.cpp</File>
+	<File>10_19.cpp</File>
 </Folder>
 <Folder name="Header Files">
 	<File>ThreadEx.h</File>
@@ -56,6 +78,7 @@
 	<File>Queue.h</File>
 	<File>Sort.h</File>
 	<File>Search.h</File>
+	<File>queue2.h</File>
 </Folder>
 <Folder name="Other Files">
 </Folder>
@@ -91,22 +114,42 @@
 <Attribute topline="31" x="11" y="46">7_3.cpp</Attribute>
 <Attribute topline="34" x="11" y="47">lab8_1.cpp</Attribute>
 <Attribute topline="1" x="11" y="51">lab8_2.cpp</Attribute>
-<Attribute topline="4" x="15" y="10">lab9_1.cpp</Attribute>
 <Attribute topline="1" x="11" y="30">lab9_2.cpp</Attribute>
 <Attribute topline="1" x="2" y="11">lab9_3.cpp</Attribute>
 <Attribute topline="1" x="11" y="7">lab9_4.cpp</Attribute>
 <Attribute topline="1" x="14" y="6">lab9_7.cpp</Attribute>
 <Attribute topline="1" x="11" y="6">lab9_9.cpp</Attribute>
 <Attribute topline="85" x="17" y="14">Calculator.cpp</Attribute>
+<Attribute topline="1" x="11" y="8">lab9_10.cpp</Attribute>
+<Attribute topline="1" x="2" y="8">lab9_11.cpp</Attribute>
+<Attribute topline="4" x="2" y="19">lab9_12.cpp</Attribute>
+<Attribute topline="16" x="11" y="6">lab9_13.cpp</Attribute>
+<Attribute topline="1" x="11" y="9">lab10_1.cpp</Attribute>
+<Attribute topline="1" x="11" y="13">10_2.cpp</Attribute>
+<Attribute topline="1" x="46" y="18">10_3.cpp</Attribute>
+<Attribute topline="7" x="11" y="16">10_4.cpp</Attribute>
+<Attribute topline="10" x="11" y="10">10_5.cpp</Attribute>
+<Attribute topline="1" x="11" y="8">10_6.cpp</Attribute>
+<Attribute topline="1" x="11" y="6">10_7.cpp</Attribute>
+<Attribute topline="31" x="11" y="42">10_8.cpp</Attribute>
+<Attribute topline="10" x="48" y="16">10_9.cpp</Attribute>
+<Attribute topline="1" x="11" y="8">10_10.cpp</Attribute>
+<Attribute topline="1" x="11" y="9">10_11.cpp</Attribute>
+<Attribute topline="1" x="11" y="8">10_12.cpp</Attribute>
+<Attribute topline="1" x="11" y="11">10_13.cpp</Attribute>
+<Attribute topline="7" x="11" y="14">10_14.cpp</Attribute>
+<Attribute topline="4" x="14" y="1">10_15.cpp</Attribute>
+<Attribute topline="4" x="11" y="11">10_16.cpp</Attribute>
 <Attribute topline="49" x="18" y="57">point.h</Attribute>
-<Attribute topline="52" x="13" y="93">array.h</Attribute>
-<Attribute topline="23" x="23" y="47">Node.h</Attribute>
-<Attribute topline="183" x="25" y="194">LinkedList.h</Attribute>
+<Attribute topline="25" x="6" y="34">array.h</Attribute>
+<Attribute topline="10" x="21" y="14">Node.h</Attribute>
+<Attribute topline="1" x="17" y="9">LinkedList.h</Attribute>
 <Attribute topline="1" x="1" y="30">Stack.h</Attribute>
 <Attribute topline="4" x="12" y="14">Calculator.h</Attribute>
-<Attribute topline="67" x="29" y="54">Queue.h</Attribute>
-<Attribute topline="1" x="8" y="1">Sort.h</Attribute>
-<Attribute topline="1" x="5" y="27">Search.h</Attribute>
+<Attribute topline="1" x="17" y="10">Queue.h</Attribute>
+<Attribute topline="1" x="7" y="6">Sort.h</Attribute>
+<Attribute topline="13" x="2" y="28">Search.h</Attribute>
+<Attribute topline="4" x="16" y="14">queue2.h</Attribute>
 <Attribute topline="4" x="33" y="28">Readme.md</Attribute>
 <FolderState>111</FolderState>
 <Breakpoint>
@@ -119,7 +162,16 @@
 	<Line>8</Line>
 	<Condition></Condition>
 </Breakpoint>
-<Watch name="result"/>
+<Breakpoint>
+	<File>10_6.cpp</File>
+	<Line>12</Line>
+	<Condition></Condition>
+</Breakpoint>
+<Watch name="s1"/>
+<Watch name="s2"/>
+<Watch name="iter1"/>
+<Watch name="iter2"/>
+<Watch name="iter3"/>
 <DefConfig>TDM-GCC-64</DefConfig>
 <Builder name="TDM-GCC-64" type="MinGW" version="1.0">
 	<TargetName>TestExamples</TargetName>

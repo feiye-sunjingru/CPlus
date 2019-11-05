@@ -25,8 +25,22 @@
 * lab9_4.cpp 检查i是否能被比它小的质数整除,来判断i是否是质数。存储2~n的质数 
 * Node.h 单链表结点的类模板 
 * lab9_7.cpp 链表类模板实现 
-* lab9_9.cpp 实现计算 3 5 * = 15 
-
+* lab9_9.cpp 实现计算 3 5 * = 15
+* lab9_10~13.cpp 实现队列、栈类模板 
+* lab10_1/2.cpp 实现键盘输入，利用容器+迭代器+算法+函数对象，求相反数、求平方 
+* 10_3.cpp 迭代器，自定义一个排序。容器vecor~push_back、sort(s.begin(), s.end())、copy(s.begin(), s.end(), result)
+* 10_4.cpp 关于随机访问容器deque双端队列，赋值、倒序、相邻元素颠倒、输出
+* 10_5.cpp 奇偶排序，随机访问容器vector\deque的操作 
+* 10_6.cpp 顺序容器list的操作 
+* 10_7.cpp 顺序容器的适配器~栈，实现字符串逆序输出 
+* 10_8.cpp 有优先队列的使用，srand 
+* 10_9.cpp 关联容器set:upper_bound\lower_bound\insert\begin\end 
+* 10_10.cpp 关联容器map:make_pair\find\erase 
+* 10_11.cpp 相当于wordcount，涉及函数：isalpha\tolower
+* 10_12.cpp 上课时间查询，这里涉及函数：count、equal_range、range.first、range.second 
+* 10_13.cpp numeric数值计算头文件：accumulate 累计操作。改进：10_14.cpp、10_15.cpp 
+* 10_16.cpp、10_17.cpp 函数对象的使用 
+* 10_18.cpp 涉及绑定适配器、组合适配器、函数指针适配器的使用 
 
 ## 注意：
 * 只有构造函数可以用:初始化
@@ -41,7 +55,15 @@
 * 返回局部变量时，返回类型不能是引用
 * 函数中，默认值放置在定义的参数列表中而不是声明的位置 
 * 模板类中，外部对象需要Node<T>* Node<T>::deleteAfter() 
-
+* 一旦链表类实现了，在main函数中完成相应的功能就比较方便了 
+* 队列类的特点就是其元素的操作顺序为先入先出FIFO，用链表实现队列:用链表类的成员函数实现队列类的push和pop成员函数
+* 引入基类时，对应的函数也要引入模板参数，LinkedList<T>() 
+* s1.splice(iterator position, list<T,Allocator>& x, iterator first, iterator last ) list操作中，在s1的position之后插入x的[first,last)
+* s1.splice(iterator position, list<T,Allocator>& x, iterator it) list操作中s1的position后插入x的it位置的数据
+* lower_bound():在first和last中的前闭后开区间进行二分查找，返回大于或等于val的第一个元素位置
+* upper_bound():函数upper_bound()返回的在前闭后开区间查找的关键字的上界，返回大于val的第一个元素位置
+* algorithm:sort、find_if、for_each、mem_fun对象指针、mem_fun_ref对象引用 
+ 
 栈模板：
 * 初始化
 * 入栈
@@ -57,7 +79,10 @@
  * 解决方法 
  
  ## 常见错误
- 1.C++ error: 'string' does not name a type
- 答： 
- using namespace std;
-#include <string> 
+1.C++ error: 'string' does not name a type
+答： 
+	using namespace std;
+	#include <string> 
+2. error: expected template-name before '<' token
+答：头文件中没引入所需要的基类 
+

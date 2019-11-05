@@ -10,6 +10,7 @@ private:
 	int size;
 public:
 	Array(int sz = 50);
+	Array(T* array, int n);
 	Array(const Array <T> & a); 
 	~Array();
 	Array<T>& operator = (const Array <T> & rhs); // 重载“=”
@@ -19,6 +20,11 @@ public:
 	operator const T* () const;
 	int getSize(); // 取数组的大小
 	void resize(int sz); // 修改数组的大小 
+	
+	// 增加排序算法
+	T* insertSort();
+	T* selectSort();
+	T* bubbleSort(); 
 };
 
 // 构造函数 
@@ -29,8 +35,19 @@ Array<T>::Array(int sz) {
 	list = new T[size];  // 定义个数组，数组每个元素是T类型
 }
 
+template <class T> 
+Array<T>::Array(T* array, int n){
+	assert(n >= 0);
+	size = n;
+	list = new T[size];
+	for(int i=0; i<n; i++){
+		list[i] = array[i];
+	} 
+}
+
 // 拷贝构造函数 
-template <class T> Array<T>::Array(const Array<T> &a) {
+template <class T> 
+Array<T>::Array(const Array<T> &a) {
 	size = a.size;
 	list = new T[size]; // 深层复制
 	for (int i = 0; i < size; i++) {
@@ -96,7 +113,58 @@ void Array<T>::resize(int sz){
 	} 
 	delete[] list; // 删除原数组
 	list = newList; // 使得list指向新数组
-	size = sz; // 更新size 
-	 
+	size = sz; // 更新size 	 
 } 
+
+template <class T>
+void mySwap(T&x, T&y){
+	T temp = x;
+	x = y;
+	y = temp;
+}
+
+template <class T>
+T* Array<T>:: insertSort(){
+	for(int i=1; i<size; i++){
+        int key = list[i];
+        int j = i-1;
+        while((j>=0) && (key<list[j])){
+            list[j+1] = list[j];
+            j--;
+        }
+        list[j+1] = key;
+    }
+    return list;
+}
+
+template <class T>
+T* Array<T>::selectSort(){  // 从小到大排序 
+	for(int i=0; i<size-1; i++){
+		int leaseIndex = i;
+		for(int j=i+1; j<size; j++){ // 找出一次遍历中最小的值 
+			if(list[j]<list[leaseIndex]){
+				leaseIndex = j;
+			}
+		}
+		mySwap(list[i], list[leaseIndex]); 
+	}
+	return list;
+} 
+
+template <class T>
+T* Array<T>::bubbleSort(){  // 从小到大排序 
+	int i = size-1;
+	while(i > 0){
+		int lastExchangeIndex = 0;  // 最后一次发生交换的下标，避免后面的有序序列还要比较 
+		for(int j=0; j<i; j++){ // 一次遍历中两两比较 
+			if(list[j+1] < list[j]){ 
+				mySwap(list[j], list[j+1]);
+				lastExchangeIndex = j;
+			}
+		}
+		i = lastExchangeIndex;
+	}
+	return list;
+}
+
 #endif
