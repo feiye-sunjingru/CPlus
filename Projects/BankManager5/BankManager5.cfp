@@ -15,9 +15,13 @@
 </Folder>
 <Folder name="Other Files">
 </Folder>
+<Attribute topline="1" x="15" y="11">main.cpp</Attribute>
+<Attribute topline="126" x="6" y="85">account.cpp</Attribute>
+<Attribute topline="109" x="18" y="115">account.h</Attribute>
+<Attribute topline="1" x="33" y="7">accumulator.h</Attribute>
 <FolderState>111</FolderState>
 <DefConfig>TDM-GCC-64</DefConfig>
-<Builder name="TDM-GCC-64" type="MinGW" version="1.0" changed="1">
+<Builder name="TDM-GCC-64" type="MinGW" version="1.0">
 	<TargetName>BankManager5</TargetName>
 	<TargetType>exe</TargetType>
 	<TargetDir>TDM-GCC-64</TargetDir>
