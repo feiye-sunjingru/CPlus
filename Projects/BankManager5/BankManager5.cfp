@@ -15,10 +15,16 @@
 </Folder>
 <Folder name="Other Files">
 </Folder>
-<Attribute topline="1" x="15" y="11">main.cpp</Attribute>
-<Attribute topline="126" x="6" y="85">account.cpp</Attribute>
-<Attribute topline="109" x="18" y="115">account.h</Attribute>
-<Attribute topline="1" x="33" y="7">accumulator.h</Attribute>
+	<File>result.txt</File>
+	<File>ReadMe.md</File>
+<Attribute topline="1" x="34" y="10">main.cpp</Attribute>
+<Attribute topline="91" x="35" y="101">account.cpp</Attribute>
+<Attribute topline="24" x="15" y="38">date.cpp</Attribute>
+<Attribute topline="91" x="8" y="111">account.h</Attribute>
+<Attribute topline="7" x="13" y="27">date.h</Attribute>
+<Attribute topline="15" x="7" y="35">accumulator.h</Attribute>
+<Attribute topline="1" x="40" y="28">result.txt</Attribute>
+<Attribute topline="1" x="40" y="15">ReadMe.md</Attribute>
 <FolderState>111</FolderState>
 <DefConfig>TDM-GCC-64</DefConfig>
 <Builder name="TDM-GCC-64" type="MinGW" version="1.0">

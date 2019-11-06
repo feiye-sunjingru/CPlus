@@ -1,0 +1,13 @@
+c
+ a s S65324 0.002
+ a s 452592 0.015
+ a c C66239 100000 0.001 50
+ a c C52013 20000 0.0015 60
+ c 3
+ d 0 6000 salary
+ c 9
+ w 2 2000 buy a car
+ c 15
+ d 1 10000 sell stac1 0323
+ n
+ d 2 2018 repay the credit

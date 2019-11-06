@@ -1,9 +1,11 @@
 <Projects version="2.0">
 	<Project active="1">BankManager5.cfp</Project>
 	<File active="0">main.cpp</File>
+	<File active="0">result.txt</File>
+	<File active="1">ReadMe.md</File>
 	<File active="0">date.h</File>
 	<File active="0">date.cpp</File>
 	<File active="0">account.cpp</File>
-	<File active="1">account.h</File>
+	<File active="0">account.h</File>
 	<File active="0">accumulator.h</File>
 </Projects>

@@ -1,0 +1,28 @@
+You cannot specify a previous day(a)add account  (d)deposit  (w)withdraw  (s)show  (c)change day  (n)next month  (q)query  (e)exit
+2018-1-1        Total: 0        command a s S65324 0.002
+2018-1-1        #S65324 created
+2018-1-1        Total: 0        command a s 452592 0.015
+2018-1-1        #452592 created
+2018-1-1        Total: 0        command a c C66239 100000 0.001 50
+2018-1-1        #C66239 created
+2018-1-1        Total: 0        command a c C52013 20000 0.0015 60
+2018-1-1        #C52013 created
+2018-1-1        Total: 0        command c 3
+2018-1-3        Total: 0        command d 0 6000 salary
+2018-1-3        #S65324 6000    6000     salary
+2018-1-3        Total: 6000     command c 9
+2018-1-9        Total: 6000     command w 2 2000 buy a car
+2018-1-9        #C66239 -2000   -2000    buy a car
+2018-1-9        Total: 4000     command c 15
+2018-1-15       Total: 4000     command d 1 10000 sell stac1 0323
+2018-1-15       #452592 10000   10000    sell stac1 0323
+2018-1-15       Total: 14000    command n
+2018-2-1        #C66239 -46     -2046   interest
+2018-2-1        Total: 13954    command d 2 2018 repay the credit
+2018-2-1        #C66239 2018    -28      repay the credit
+2018-2-1        Total: 15972    command s
+[0]S65324       Balance: 6000
+[1]452592       Balance: 10000
+[2]C66239       Balance: -28    Available credit: 99972
+[3]C52013       Balance: 0      Available credit: 20000
+2018-2-1        Total: 15972    command
