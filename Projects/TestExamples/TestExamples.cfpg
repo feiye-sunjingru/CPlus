@@ -1,8 +1,5 @@
 <Projects version="2.0">
 	<Project active="1">TestExamples.cfp</Project>
 	<File active="0">Readme.md</File>
-	<File active="0">Sort.h</File>
-	<File active="1">Search.h</File>
-	<File active="0">Queue.h</File>
-	<File active="0">lab9_9.cpp</File>
+	<File active="1">10_19.cpp</File>
 </Projects>

@@ -1,183 +1,24 @@
 <Project version="3.0">
-<Name>TestExamples</Name>
+<Name>BankManager5</Name>
 <Type>CUI</Type>
-<TargetName>TestExamples</TargetName>
+<TargetName>BankManager5</TargetName>
 <TargetType>exe</TargetType>
 <Folder name="Source Files">
-	<File>2_1.cpp</File>
-	<File>3_3.cpp</File>
-	<File>6_10.cpp</File>
-	<File>3_4.cpp</File>
-	<File>3_5.cpp</File>
-	<File>4_2.cpp</File>
-	<File>4_4.cpp</File>
-	<File>4_8.cpp</File>
-	<File>4_9.cpp</File>
-	<File>4_10.cpp</File>
-	<File>4_11.cpp</File>
-	<File>CFree.cpp</File>
-	<File>CPU.cpp</File>
-	<File>hello_world.cpp</File>
-	<File>TestThread.cpp</File>
-	<File>ThreadEx.cpp</File>
-	<File>6_11.cpp</File>
-	<File>6_12.cpp</File>
-	<File>6_18.cpp</File>
-	<File>6_19.cpp</File>
-	<File>6_20.cpp</File>
-	<File>6_21.cpp</File>
-	<File>6_22.cpp</File>
-	<File>6_23.cpp</File>
-	<File>6_24.cpp</File>
-	<File>6_25.cpp</File>
-	<File>8_1.cpp</File>
-	<File>8_2.cpp</File>
-	<File>8_3.cpp</File>
-	<File>7_3.cpp</File>
-	<File>lab8_1.cpp</File>
-	<File>lab8_2.cpp</File>
-	<File>lab9_1.cpp</File>
-	<File>lab9_2.cpp</File>
-	<File>lab9_3.cpp</File>
-	<File>lab9_4.cpp</File>
-	<File>lab9_7.cpp</File>
-	<File>lab9_9.cpp</File>
-	<File>Calculator.cpp</File>
-	<File>lab9_10.cpp</File>
-	<File>lab9_11.cpp</File>
-	<File>lab9_12.cpp</File>
-	<File>lab9_13.cpp</File>
-	<File>lab10_1.cpp</File>
-	<File>10_2.cpp</File>
-	<File>10_3.cpp</File>
-	<File>10_4.cpp</File>
-	<File>10_5.cpp</File>
-	<File>10_6.cpp</File>
-	<File>10_7.cpp</File>
-	<File>10_8.cpp</File>
-	<File>10_9.cpp</File>
-	<File>10_10.cpp</File>
-	<File>10_11.cpp</File>
-	<File>10_12.cpp</File>
-	<File>10_13.cpp</File>
-	<File>10_14.cpp</File>
-	<File>10_15.cpp</File>
-	<File>10_16.cpp</File>
-	<File>10_17.cpp</File>
-	<File>10_18.cpp</File>
-	<File>10_19.cpp</File>
+	<File>main.cpp</File>
+	<File>account.cpp</File>
+	<File>date.cpp</File>
 </Folder>
 <Folder name="Header Files">
-	<File>ThreadEx.h</File>
-	<File>point.h</File>
-	<File>array.h</File>
-	<File>Node.h</File>
-	<File>LinkedList.h</File>
-	<File>Stack.h</File>
-	<File>Calculator.h</File>
-	<File>Queue.h</File>
-	<File>Sort.h</File>
-	<File>Search.h</File>
-	<File>queue2.h</File>
+	<File>account.h</File>
+	<File>date.h</File>
+	<File>accumulator.h</File>
 </Folder>
 <Folder name="Other Files">
 </Folder>
-	<File>Readme.md</File>
-<Attribute topline="1" x="20" y="12">2_1.cpp</Attribute>
-<Attribute topline="67" x="9" y="79">3_3.cpp</Attribute>
-<Attribute topline="1" x="11" y="11">6_10.cpp</Attribute>
-<Attribute topline="4" x="10" y="7">3_4.cpp</Attribute>
-<Attribute topline="10" x="10" y="14">3_5.cpp</Attribute>
-<Attribute topline="1" x="54" y="7">4_2.cpp</Attribute>
-<Attribute topline="52" x="10" y="59">4_4.cpp</Attribute>
-<Attribute topline="37" x="10" y="44">4_8.cpp</Attribute>
-<Attribute topline="1" x="10" y="9">4_9.cpp</Attribute>
-<Attribute topline="197" x="10" y="199">4_10.cpp</Attribute>
-<Attribute topline="1" x="11" y="66">4_11.cpp</Attribute>
-<Attribute topline="1" x="11" y="5">CFree.cpp</Attribute>
-<Attribute topline="49" x="1" y="57">CPU.cpp</Attribute>
-<Attribute topline="4" x="11" y="9">hello_world.cpp</Attribute>
-<Attribute topline="10" x="11" y="11">TestThread.cpp</Attribute>
-<Attribute topline="49" x="1" y="1">ThreadEx.cpp</Attribute>
-<Attribute topline="10" x="11" y="9">6_11.cpp</Attribute>
-<Attribute topline="13" x="2" y="25">6_12.cpp</Attribute>
-<Attribute topline="10" x="11" y="5">6_18.cpp</Attribute>
-<Attribute topline="2" x="1" y="3">6_19.cpp</Attribute>
-<Attribute topline="19" x="11" y="16">6_20.cpp</Attribute>
-<Attribute topline="1" x="11" y="7">6_22.cpp</Attribute>
-<Attribute topline="1" x="11" y="38">6_23.cpp</Attribute>
-<Attribute topline="1" x="11" y="7">6_24.cpp</Attribute>
-<Attribute topline="34" x="1" y="1">6_25.cpp</Attribute>
-<Attribute topline="1" x="11" y="32">8_1.cpp</Attribute>
-<Attribute topline="16" x="17" y="36">8_2.cpp</Attribute>
-<Attribute topline="1" x="11" y="31">8_3.cpp</Attribute>
-<Attribute topline="31" x="11" y="46">7_3.cpp</Attribute>
-<Attribute topline="34" x="11" y="47">lab8_1.cpp</Attribute>
-<Attribute topline="1" x="11" y="51">lab8_2.cpp</Attribute>
-<Attribute topline="1" x="11" y="30">lab9_2.cpp</Attribute>
-<Attribute topline="1" x="2" y="11">lab9_3.cpp</Attribute>
-<Attribute topline="1" x="11" y="7">lab9_4.cpp</Attribute>
-<Attribute topline="1" x="14" y="6">lab9_7.cpp</Attribute>
-<Attribute topline="1" x="11" y="6">lab9_9.cpp</Attribute>
-<Attribute topline="85" x="17" y="14">Calculator.cpp</Attribute>
-<Attribute topline="1" x="11" y="8">lab9_10.cpp</Attribute>
-<Attribute topline="1" x="2" y="8">lab9_11.cpp</Attribute>
-<Attribute topline="4" x="2" y="19">lab9_12.cpp</Attribute>
-<Attribute topline="16" x="11" y="6">lab9_13.cpp</Attribute>
-<Attribute topline="1" x="11" y="9">lab10_1.cpp</Attribute>
-<Attribute topline="1" x="11" y="13">10_2.cpp</Attribute>
-<Attribute topline="1" x="46" y="18">10_3.cpp</Attribute>
-<Attribute topline="7" x="11" y="16">10_4.cpp</Attribute>
-<Attribute topline="10" x="11" y="10">10_5.cpp</Attribute>
-<Attribute topline="1" x="11" y="8">10_6.cpp</Attribute>
-<Attribute topline="1" x="11" y="6">10_7.cpp</Attribute>
-<Attribute topline="31" x="11" y="42">10_8.cpp</Attribute>
-<Attribute topline="10" x="48" y="16">10_9.cpp</Attribute>
-<Attribute topline="1" x="11" y="8">10_10.cpp</Attribute>
-<Attribute topline="1" x="11" y="9">10_11.cpp</Attribute>
-<Attribute topline="1" x="11" y="8">10_12.cpp</Attribute>
-<Attribute topline="1" x="11" y="11">10_13.cpp</Attribute>
-<Attribute topline="7" x="11" y="14">10_14.cpp</Attribute>
-<Attribute topline="4" x="14" y="1">10_15.cpp</Attribute>
-<Attribute topline="4" x="11" y="11">10_16.cpp</Attribute>
-<Attribute topline="4" x="11" y="8">10_17.cpp</Attribute>
-<Attribute topline="1" x="11" y="12">10_18.cpp</Attribute>
-<Attribute topline="37" x="60" y="26">10_19.cpp</Attribute>
-<Attribute topline="49" x="18" y="57">point.h</Attribute>
-<Attribute topline="25" x="6" y="34">array.h</Attribute>
-<Attribute topline="10" x="21" y="14">Node.h</Attribute>
-<Attribute topline="1" x="17" y="9">LinkedList.h</Attribute>
-<Attribute topline="1" x="1" y="30">Stack.h</Attribute>
-<Attribute topline="4" x="12" y="14">Calculator.h</Attribute>
-<Attribute topline="1" x="17" y="10">Queue.h</Attribute>
-<Attribute topline="1" x="7" y="6">Sort.h</Attribute>
-<Attribute topline="13" x="2" y="28">Search.h</Attribute>
-<Attribute topline="4" x="16" y="14">queue2.h</Attribute>
-<Attribute topline="52" x="70" y="65">Readme.md</Attribute>
 <FolderState>111</FolderState>
-<Breakpoint>
-	<File>test.cpp</File>
-	<Line>30</Line>
-	<Condition></Condition>
-</Breakpoint>
-<Breakpoint>
-	<File>lab9_9.cpp</File>
-	<Line>8</Line>
-	<Condition></Condition>
-</Breakpoint>
-<Breakpoint>
-	<File>10_6.cpp</File>
-	<Line>12</Line>
-	<Condition></Condition>
-</Breakpoint>
-<Watch name="s1"/>
-<Watch name="s2"/>
-<Watch name="iter1"/>
-<Watch name="iter2"/>
-<Watch name="iter3"/>
 <DefConfig>TDM-GCC-64</DefConfig>
-<Builder name="TDM-GCC-64" type="MinGW" version="1.0">
-	<TargetName>TestExamples</TargetName>
+<Builder name="TDM-GCC-64" type="MinGW" version="1.0" changed="1">
+	<TargetName>BankManager5</TargetName>
 	<TargetType>exe</TargetType>
 	<TargetDir>TDM-GCC-64</TargetDir>
 	<InterimDir>TDM-GCC-64</InterimDir>
